@@ -253,6 +253,10 @@ $(function () {
     $modalNewGame.on("shown.bs.modal", function () {
         $newGame.load();
     });
+    $("#numbers").change(function() {
+        var inputs = $(this).closest('form').find(':input');
+        inputs.eq( inputs.index(this)+ 1 ).focus();
+      });
 
     $("#btn-unlock").click(function (event) {
         event.preventDefault();
@@ -272,7 +276,7 @@ $(function () {
                 setUnlockButtonVisible(false);
             } else {
                 $lock.shake();
-                $messageBox.error($.i18n(result.message, result.valids));
+                $messageBox.error($.i18n(result.message, result.valids, result.corrects));
                 playAudioEffect($audio.WRONG);
                 $("#numbers").find(".number").first().focus().select();
             }
