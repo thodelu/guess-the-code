@@ -253,10 +253,10 @@ $(function () {
     $modalNewGame.on("shown.bs.modal", function () {
         $newGame.load();
     });
-    $("#numbers").change(function() {
+    $("#numbers").find(".number").change(function() {
         var inputs = $(this).closest('form').find(':input');
         inputs.eq( inputs.index(this)+ 1 ).focus();
-      });
+    });
 
     $("#btn-unlock").click(function (event) {
         event.preventDefault();

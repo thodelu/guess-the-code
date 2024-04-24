@@ -31,9 +31,9 @@
     "color-theme": "Color Theme",
     "invalid.repeated.numbers": "Repeated numbers are not allowed",
     "end-game": "Congratulations! You guessed the code in $1 guesses!",
-    "valid.numbers.in.correct.places": "$1 valid number(s). All in a correct place",
-    "valid.numbers.in.wrong.places": "$1 valid number(s). $2 in a wrong place",
-    "everything.is.wrong": "Everthing is wrong",
+    "valid.numbers.in.correct.places": "Valid numbers: $1. In correct place: $2",
+    "valid.numbers.in.wrong.places": "Valid numbers: $1. In correct place: $2",
+    "everything.is.wrong": "Valid numbers: $1. In correct place: $2",
     "language": "Language",
     "en_us": "English (USA)",
     "pt_br": "Portuguese (Brazil)"
