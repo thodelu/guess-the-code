@@ -56,6 +56,13 @@ class NewGame extends Observable {
         this.$repetition.value = SettingsUtils.repetition;
         this.$target.value = Array(SettingsUtils.size).fill(0);
 
-        this.$el.find("input").first().focus();
+        // this.$el.find("input").first().focus();
+        $(document).ready(function(){
+            $('input').keyup(function(){
+                if(this.value.length==$size.value){
+                    $(this).next().focus();
+                }
+            });
+        });
     }
 }
